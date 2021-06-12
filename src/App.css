@@ -1,38 +1,135 @@
+/* main app styling start */
 .App {
+  margin-top: 2rem;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 430px) {
+  .App {
+    margin-top: 0rem;
+  }
+}
+/* main app styling end */
+
+/* center elements in div */
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+/* center elements in div */
+
+/* search div styling starts */
+
+div .search {
+  height: 600px;
+  background-image: url("../src/images/bg.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media screen and (max-width: 430px) {
+  div .search {
+    border-radius: 20px;
+  }
+}
+
+.location-indicator-div {
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+  padding: 20px 10px 5px 10px;
+  border-radius: 12px;
+  color: #ececec;
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 430px) {
+  .location-indicator-div {
+    width: 100%;
+  }
+}
+
+.location-icon {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.current-location-h {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+}
+
+.current-location-b {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+/* header msg div starts */
+
+.header-msg-div {
+  margin: 100px 0px 0px 10px;
+}
+
+.header-msg-text {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header msg div ends */
+
+/* input field styling starts */
+
+.input-div {
+  margin: 100px auto 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* input field styling starts */
+
+/* search div styling starts */
+
+/* result div styling starts */
+
+.result {
+  height: 600px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.time-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: left;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.date-text {
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin: 4px 5px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.time-text {
+  color: black;
+  font-weight: 400;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  margin: 3px 2px;
+}
+
+@media screen and (max-width: 430px) {
+  .date-text,
+  .time-text {
+    font-size: 15px;
   }
 }
+
+CardContent {
+  margin-right: 50px;
+}
+/* result div styling starts */
